@@ -1,0 +1,436 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    color: #333;
+}
+
+#login-container h2 {
+    margin-bottom: 20px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    gap: 10px;
+}
+
+#login-form label {
+    font-weight: bold;
+}
+
+#login-form input,
+#login-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+#show-password {
+    margin-left: 10px;
+}
+
+#login-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #333;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#logo img {
+    height: 50px;
+}
+
+#user-info {
+    margin-top: 10px;
+}
+
+#username-display {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#username-display:hover {
+    text-decoration: underline;
+}
+
+#user-details {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    word-wrap: break-word;
+    z-index: 1000;
+}
+
+#user-details h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+#user-details p {
+    margin: 10px 0;
+}
+
+#user-details button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#user-details button:hover {
+    background-color: #333;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Verdana', sans-serif;
+}
+
+#clock {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Digital-7', sans-serif;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'Digital-7';
+    src: url('https://fonts.cdnfonts.com/s/69891/Digital7Mono.woff') format('woff');
+}
+
+#visit-count {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #333;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#carousel {
+    width: 100%;
+    overflow: hidden;
+max-width: 100%
+}
+
+#carousel img {
+    width: 100%;
+    animation: slide 20s infinite;
+    height: 150px;
+    width: 200px;
+
+}
+
+@keyframes slide {
+    0% {transform: translateX(0%);}
+    20% {transform: translateX(-100%);}
+    40% {transform: translateX(-200%);}
+    60% {transform: translateX(-100%);}
+    80% {transform: translateX(0%);}
+    100% {transform: translateX(0%);}
+}
+
+#highlighted {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#news {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#news h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#news-list {
+    list-style: none;
+    padding: 0;
+}
+
+#news-list li {
+    margin: 10px 0;
+}
+
+#search-section {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
+button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+#topics {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topic {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: 90%;
+    max-width: 250px;
+    text-align: left;
+}
+
+.topic button {
+    width: 100%;
+    margin: 0;
+}
+
+#search-result {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#location {
+    background-color: #ff0000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+#location h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#contact {
+    background-color: #ff0000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+#contact h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact-form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #333;
+}
+
+#curriculum {
+    background-color: #ff0000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+#curriculum h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#curriculum h3 {
+    margin-bottom: 10px;
+}
+
+#social-media {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#social-media a {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+#social-media img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #login-container {
+        padding: 20px;
+    }
+
+    header,
+    #main-content {
+        padding: 20px;
+    }
+
+    nav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #user-details {
+        width: calc(100% - 20px);
+        max-width: none;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

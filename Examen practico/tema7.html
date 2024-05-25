@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología en la Fórmula 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            padding: 20px;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+        .btn-custom {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .btn-custom:hover {
+            background-color: #c82333;
+            color: white;
+        }
+        .content-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .static-data {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #additional-info {
+            margin-top: 20px;
+        }
+        .highlight {
+            border-left: 5px solid #dc3545;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .highlight ul {
+            padding-left: 20px;
+        }
+        .audio-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tecnología en la Fórmula 1</h1>
+        <div id="clock"></div>
+        <nav>
+            <a class="btn btn-custom" href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <main id="main-content" class="container">
+        <div class="static-data">
+            <p>Innovaciones, Avances, Futuro de la Tecnología en F1</p>
+        </div>
+        <section class="info-section">
+            <h2>Introducción</h2>
+            <div class="content-section">
+                <p>La tecnología en la Fórmula 1 está a la vanguardia del automovilismo y ha impulsado innumerables innovaciones que han mejorado tanto el rendimiento de los coches como la seguridad de los pilotos. Desde el diseño aerodinámico hasta los sistemas de recuperación de energía, la F1 es un laboratorio de pruebas para la tecnología de vanguardia.</p>
+                <div class="audio-container">
+                    <h3>Escuchamos al experto en tecnología de autos F1</h3>
+                    <!-- Reproductor de audio -->
+                    <audio controls>
+                        <source src="C:\Users\RicardoUSG\Downloads\Examen practico\Grabación (2).m4a" type="audio/mp3">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <p>En esta sección, exploraremos algunas de las tecnologías más importantes y cómo han evolucionado a lo largo de los años, contribuyendo al desarrollo del deporte y la industria automotriz en general.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Diseño Aerodinámico</h2>
+            <div class="content-section">
+                <p>El diseño aerodinámico es crucial en la Fórmula 1, ya que afecta la velocidad y la eficiencia del coche. Los equipos utilizan túneles de viento y simulaciones por computadora para optimizar la forma del coche y reducir la resistencia al aire.</p>
+                <div class="highlight">
+                    <h4>Aspectos Clave del Diseño Aerodinámico</h4>
+                    <ul>
+                        <li>Alerones: Los alerones delanteros y traseros generan carga aerodinámica, ayudando a mantener el coche pegado a la pista.</li>
+                        <li>Difusores: Ayudan a acelerar el flujo de aire bajo el coche, aumentando la carga aerodinámica.</li>
+                        <li>Bargeboards: Elementos aerodinámicos que gestionan el flujo de aire alrededor de los neumáticos y el chasis.</li>
+                    </ul>
+                </div>
+                <p>La aerodinámica es una de las áreas más competitivas y reguladas en la Fórmula 1, con constantes innovaciones y ajustes para obtener ventajas en el rendimiento.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Unidades de Potencia Híbridas</h2>
+            <div class="content-section">
+                <p>Desde 2014, la Fórmula 1 ha utilizado unidades de potencia híbridas que combinan motores de combustión interna con sistemas de recuperación de energía. Estos sistemas son más eficientes y sostenibles, reflejando el compromiso del deporte con la innovación tecnológica y la sostenibilidad.</p>
+                <div class="highlight">
+                    <h4>Componentes de las Unidades de Potencia</h4>
+                    <ul>
+                        <li>Motor de Combustión Interna (ICE): El corazón del sistema, generando potencia a través de la combustión de combustible.</li>
+                        <li>MGU-K (Motor Generator Unit - Kinetic): Recupera energía durante el frenado y la convierte en electricidad.</li>
+                        <li>MGU-H (Motor Generator Unit - Heat): Recupera energía del calor del sistema de escape.</li>
+                        <li>Baterías: Almacenan la energía recuperada para su uso durante la aceleración.</li>
+                    </ul>
+                </div>
+                <p>Las unidades de potencia híbridas no solo mejoran el rendimiento en la pista, sino que también impulsan el desarrollo de tecnologías más sostenibles para los coches de calle.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Materiales Avanzados</h2>
+            <div class="content-section">
+                <p>La Fórmula 1 utiliza materiales avanzados para construir coches ligeros y resistentes. La fibra de carbono es el material predominante debido a su alta resistencia y bajo peso.</p>
+                <div class="highlight">
+                    <h4>Materiales Comúnmente Utilizados</h4>
+                    <ul>
+                        <li>Fibra de Carbono: Utilizada en el chasis y otros componentes clave por su relación resistencia-peso.</li>
+                        <li>Kevlar: Usado en componentes de seguridad, como los cascos y trajes ignífugos.</li>
+                        <li>Aleaciones de Titanio: Utilizadas en componentes críticos como las suspensiones por su resistencia y durabilidad.</li>
+                    </ul>
+                </div>
+                <p>El uso de estos materiales no solo mejora el rendimiento y la seguridad en la Fórmula 1, sino que también impulsa su adopción en otros campos de la ingeniería y el diseño automotriz.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Sistemas de Telemetría y Datos</h2>
+            <div class="content-section">
+                <p>La recopilación y análisis de datos en tiempo real es fundamental en la Fórmula 1. Los coches están equipados con numerosos sensores que monitorizan todos los aspectos del rendimiento y envían esta información a los equipos en tiempo real.</p>
+                <div class="highlight">
+                    <h4>Aspectos Clave de la Telemetría</h4>
+                    <ul>
+                        <li>Sensores de Rendimiento: Miden variables como la velocidad, temperatura de los neumáticos y fuerzas G.</li>
+                        <li>Comunicación en Tiempo Real: Los datos se transmiten a los ingenieros en el pit lane y a las fábricas para análisis inmediato.</li>
+                        <li>Análisis de Datos: Los ingenieros utilizan software avanzado para interpretar los datos y ajustar la estrategia en tiempo real.</li>
+                    </ul>
+                </div>
+                <p>La telemetría permite a los equipos optimizar el rendimiento del coche y la estrategia de carrera, así como identificar y resolver problemas de manera proactiva.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Escribe tu propia información</h2>
+            <div class="content-section">
+                <textarea class="form-control" rows="5" id="user-input" placeholder="Añade más información sobre la tecnología de la Fórmula 1 aquí..."></textarea>
+                <button class="btn btn-custom mt-3" onclick="saveInfo()">Guardar Información</button>
+                <button class="btn btn-custom mt-3" onclick="clearInfo()">Borrar Información</button>
+            </div>
+        </section>
+        <section id="additional-info" class="info-section">
+            <div class="content-section">
+                <h3>Información Adicional</h3>
+                <p id="user-info"></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function saveInfo() {
+            const userInput = document.getElementById('user-input').value;
+            document.getElementById('user-info').innerText = userInput;
+        }
+
+        function clearInfo() {
+            document.getElementById('user-info').innerText = '';
+            document.getElementById('user-input').value = '';
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de la Fórmula 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            padding: 20px;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+        .btn-custom {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .btn-custom:hover {
+            background-color: #c82333;
+            color: white;
+        }
+        .content-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .static-data {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #additional-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historia de la Fórmula 1</h1>
+        <div id="clock"></div>
+        <nav>
+            <a class="btn btn-custom" href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <main id="main-content" class="container">
+        <div class="static-data">
+            <p>Año de Inicio: 1950 | Primer Campeón: Giuseppe Farina | Equipos Dominantes: Ferrari, Mercedes, Red Bull</p>
+        </div>
+        <section class="info-section">
+            <h2>Introducción</h2>
+            <div class="content-section">
+                <p>La Fórmula 1, también conocida como F1, es la categoría reina del automovilismo mundial. Fundada en 1950, la Fórmula 1 ha sido testigo de innumerables momentos históricos, avances tecnológicos y rivalidades épicas que han capturado la imaginación de los fanáticos de los deportes de motor en todo el mundo.</p>
+                <p>Desde sus humildes comienzos hasta convertirse en un espectáculo global, la Fórmula 1 ha evolucionado constantemente para mantenerse a la vanguardia del deporte y la ingeniería. En esta página, exploraremos la rica historia de la Fórmula 1, desde sus primeros días hasta la era moderna.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Los Primeros Años</h2>
+            <div class="content-section">
+                <p>Los primeros años de la Fórmula 1 fueron una época de pioneros y aventureros. La primera temporada oficial se celebró en 1950, con el Gran Premio de Gran Bretaña en Silverstone como la carrera inaugural. Giuseppe Farina se coronó como el primer campeón del mundo, pilotando un Alfa Romeo.</p>
+                <p>Durante la década de 1950, la Fórmula 1 fue dominada por marcas legendarias como Alfa Romeo, Ferrari, y Maserati. Los circuitos eran peligrosos y las medidas de seguridad eran prácticamente inexistentes, lo que resultaba en carreras emocionantes pero a menudo trágicas.</p>
+                <p>Juan Manuel Fangio, un piloto argentino, se convirtió en una leyenda al ganar cinco campeonatos mundiales en esta década, un récord que se mantuvo durante muchos años. Su habilidad para manejar en diversas condiciones y su destreza técnica lo convirtieron en uno de los grandes íconos del deporte.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Era Moderna</h2>
+            <div class="content-section">
+                <p>La era moderna de la Fórmula 1 comenzó en la década de 1980, cuando la tecnología y la innovación empezaron a jugar un papel crucial en el deporte. La introducción de motores turboalimentados, la electrónica avanzada y la aerodinámica sofisticada transformaron la Fórmula 1 en un laboratorio de alta tecnología sobre ruedas.</p>
+                <p>En los años 90, la rivalidad entre Ayrton Senna y Alain Prost capturó la atención de los aficionados, mientras que los avances en la seguridad de los coches y los circuitos ayudaron a reducir el número de accidentes fatales. El trágico accidente de Senna en 1994 llevó a una revisión significativa de las normas de seguridad.</p>
+                <p>En el nuevo milenio, Michael Schumacher y Ferrari dominaron la competición, estableciendo nuevos estándares de excelencia. Más recientemente, Lewis Hamilton y Mercedes han dejado una huella indeleble en la Fórmula 1 moderna, con múltiples campeonatos consecutivos.</p>
+                <p>La sostenibilidad y la eficiencia energética también han tomado protagonismo, con la introducción de unidades de potencia híbridas y la promoción de tecnologías ecológicas. La Fórmula 1 sigue evolucionando, manteniendo su esencia de velocidad y competencia, mientras se adapta a los desafíos del futuro.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Escribe tu propia información</h2>
+            <div class="content-section">
+                <textarea class="form-control" rows="5" id="user-input" placeholder="Añade más información sobre la historia de la Fórmula 1 aquí..."></textarea>
+                <button class="btn btn-custom mt-3" onclick="saveInfo()">Guardar Información</button>
+                <button class="btn btn-custom mt-3" onclick="clearInfo()">Borrar Información</button>
+            </div>
+        </section>
+        <section id="additional-info" class="info-section">
+            <div class="content-section">
+                <h3>Información Adicional</h3>
+                <p id="user-info"></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function saveInfo() {
+            const userInput = document.getElementById('user-input').value;
+            document.getElementById('user-info').innerText = userInput;
+        }
+
+        function clearInfo() {
+            document.getElementById('user-info').innerText = '';
+            document.getElementById('user-input').value = '';
+        }
+    </script>
+</body>
+</html>
+
+
+
+

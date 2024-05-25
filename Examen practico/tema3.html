@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendarios de Carreras de Fórmula 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            padding: 20px;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+        .btn-custom {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .btn-custom:hover {
+            background-color: #c82333;
+            color: white;
+        }
+        .content-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .static-data {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #additional-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calendarios de Carreras de Fórmula 1</h1>
+        <div id="clock"></div>
+        <nav>
+            <a class="btn btn-custom" href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <main id="main-content" class="container">
+        <div class="static-data">
+            <p>Temporada Actual: 2024 | Próxima Carrera: Gran Premio de Mónaco | Fecha: 26 de mayo</p>
+        </div>
+        <section class="info-section">
+            <h2>Introducción</h2>
+            <div class="content-section">
+                <p>El calendario de carreras de la Fórmula 1 es uno de los aspectos más emocionantes y esperados del deporte. Cada temporada, los equipos y pilotos viajan por todo el mundo, compitiendo en una variedad de circuitos icónicos y desafiantes. Desde las estrechas calles de Mónaco hasta las modernas instalaciones de Abu Dhabi, el calendario de la Fórmula 1 ofrece una mezcla única de historia, cultura y tecnología de vanguardia.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Calendario de la Temporada 2024</h2>
+            <div class="content-section">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Gran Premio</th>
+                            <th>Fecha</th>
+                            <th>Circuito</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gran Premio de Bahréin</td>
+                            <td>3 de marzo</td>
+                            <td>Circuito Internacional de Bahréin</td>
+                        </tr>
+                        <tr>
+                            <td>Gran Premio de Arabia Saudita</td>
+                            <td>17 de marzo</td>
+                            <td>Circuito de Jeddah</td>
+                        </tr>
+                        <tr>
+                            <td>Gran Premio de Australia</td>
+                            <td>31 de marzo</td>
+                            <td>Circuito de Albert Park</td>
+                        </tr>
+                        <tr>
+                            <td>Gran Premio de España</td>
+                            <td>14 de abril</td>
+                            <td>Circuito de Barcelona-Catalunya</td>
+                        </tr>
+                        <tr>
+                            <td>Gran Premio de Mónaco</td>
+                            <td>26 de mayo</td>
+                            <td>Circuito de Mónaco</td>
+                        </tr>
+                        <!-- Agregar más carreras según el calendario real -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Destacados del Calendario</h2>
+            <div class="content-section">
+                <p>El Gran Premio de Mónaco es quizás la carrera más famosa del calendario de la Fórmula 1. Celebrada en las estrechas y sinuosas calles del Principado de Mónaco, esta carrera es un verdadero desafío tanto para los pilotos como para los equipos. Otros eventos destacados incluyen el Gran Premio de Italia en Monza, conocido como el "Templo de la Velocidad", y el Gran Premio de Japón en Suzuka, famoso por su diseño único y técnico.</p>
+                <p>La temporada también presenta varias carreras nocturnas, como el Gran Premio de Singapur, que ofrece una experiencia visual espectacular bajo las luces de la ciudad. Estas carreras no solo prueban la habilidad y la resistencia de los pilotos, sino que también ofrecen a los fanáticos una vista impresionante de las ciudades anfitrionas.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Escribe tu propia información</h2>
+            <div class="content-section">
+                <textarea class="form-control" rows="5" id="user-input" placeholder="Añade más información sobre los calendarios de carreras de la Fórmula 1 aquí..."></textarea>
+                <button class="btn btn-custom mt-3" onclick="saveInfo()">Guardar Información</button>
+                <button class="btn btn-custom mt-3" onclick="clearInfo()">Borrar Información</button>
+            </div>
+        </section>
+        <section id="additional-info" class="info-section">
+            <div class="content-section">
+                <h3>Información Adicional</h3>
+                <p id="user-info"></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function saveInfo() {
+            const userInput = document.getElementById('user-input').value;
+            document.getElementById('user-info').innerText = userInput;
+        }
+
+        function clearInfo() {
+            document.getElementById('user-info').innerText = '';
+            document.getElementById('user-input').value = '';
+        }
+    </script>
+</body>
+</html>
+

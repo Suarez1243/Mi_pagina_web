@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Carreras en Fórmula 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            padding: 20px;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+        .btn-custom {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .btn-custom:hover {
+            background-color: #c82333;
+            color: white;
+        }
+        .content-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .static-data {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #additional-info {
+            margin-top: 20px;
+        }
+        .highlight {
+            border-left: 5px solid #dc3545;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .highlight ul {
+            padding-left: 20px;
+        }
+        .gif-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .url-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Análisis de Carreras en Fórmula 1</h1>
+        <div id="clock"></div>
+        <nav>
+            <a class="btn btn-custom" href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <main id="main-content" class="container">
+        <div class="static-data">
+            <p>Estrategias, Desempeño, y Resultados en la Fórmula 1 😊</p>
+        </div>
+        <section class="info-section">
+            <h2>Introducción</h2>
+            <div class="content-section">
+                <p>El análisis de carreras en la Fórmula 1 es una parte integral del deporte. Comprender las estrategias, el desempeño de los pilotos y los resultados de las carreras es crucial para equipos y aficionados por igual. Utilizando tecnología avanzada y análisis de datos, los equipos pueden mejorar continuamente y optimizar sus estrategias para futuras competencias. 😊</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Estrategias de Carrera</h2>
+            <div class="content-section">
+                <p>Las estrategias de carrera en la Fórmula 1 implican una combinación de decisiones sobre el uso de neumáticos, tiempos de parada en boxes y gestión del combustible. Los equipos analizan una gran cantidad de datos para tomar decisiones informadas y adaptarse a las condiciones cambiantes de la pista. 😊</p>
+                <div class="gif-container">
+                    <!-- Espacio para GIF -->
+                    <img src="C:\Users\RicardoUSG\Downloads\Examen practico\GIF formula 1.gif" alt="Estrategia de Carrera GIF" class="img-fluid">
+                </div>
+                <div class="highlight">
+                    <h4>Factores Clave en las Estrategias de Carrera</h4>
+                    <ul>
+                        <li>Elección de Neumáticos: Los equipos deben decidir cuándo cambiar neumáticos para optimizar el rendimiento. 😊</li>
+                        <li>Paradas en Boxes: El tiempo y la eficiencia de las paradas en boxes pueden hacer una gran diferencia en los resultados. 😊</li>
+                        <li>Gestión de Combustible: Asegurarse de que el coche tenga suficiente combustible para completar la carrera sin añadir peso innecesario. 😊</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Desempeño de los Pilotos</h2>
+            <div class="content-section">
+                <p>El desempeño de los pilotos es analizado en detalle para identificar áreas de mejora y ajustar las estrategias de conducción. Los datos de telemetría juegan un papel crucial en este análisis, proporcionando información precisa sobre el comportamiento del coche y del piloto en la pista. 😊</p>
+                <div class="gif-container">
+                    <!-- Espacio para GIF -->
+                    <img src="C:\Users\RicardoUSG\Downloads\Examen practico\GIF formula 1 E1.gif" alt="Desempeño de los Pilotos GIF" class="img-fluid">
+                </div>
+                <div class="highlight">
+                    <h4>Aspectos Clave del Desempeño de los Pilotos</h4>
+                    <ul>
+                        <li>Habilidad de Conducción: La capacidad del piloto para manejar el coche en diferentes condiciones de pista. 😊</li>
+                        <li>Consistencia: Mantener un rendimiento constante a lo largo de toda la carrera. 😊</li>
+                        <li>Adaptabilidad: Ajustar el estilo de conducción según las condiciones de la pista y el estado del coche. 😊</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Resultados de la Carrera</h2>
+            <div class="content-section">
+                <p>Los resultados de la carrera son el reflejo final de todas las decisiones estratégicas y el desempeño de los pilotos. Analizar estos resultados permite a los equipos aprender y planificar mejor para futuras carreras. 😊</p>
+                <div class="highlight">
+                    <h4>Elementos Clave en el Análisis de Resultados</h4>
+                    <ul>
+                        <li>Posiciones Finales: La posición en la que los pilotos terminan la carrera. 😊</li>
+                        <li>Tiempos de Vuelta: Comparación de los tiempos de vuelta para identificar patrones de rendimiento. 😊</li>
+                        <li>Incidentes en Carrera: Análisis de cualquier incidente que haya afectado el resultado de la carrera. 😊</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Escribe tu propia información</h2>
+            <div class="content-section">
+                <textarea class="form-control" rows="5" id="user-input" placeholder="Añade más información sobre el análisis de carreras en Fórmula 1 aquí..."></textarea>
+                <button class="btn btn-custom mt-3" onclick="saveInfo()">Guardar Información</button>
+                <button class="btn btn-custom mt-3" onclick="clearInfo()">Borrar Información</button>
+            </div>
+        </section>
+        <section id="additional-info" class="info-section">
+            <div class="content-section">
+                <h3>Información Adicional</h3>
+                <p id="user-info"></p>
+            </div>
+        </section>
+        <section class="info-section url-container">
+            <h2>Para más información</h2>
+            <div class="content-section">
+                <ul>
+                    <li><a href="https://www.formula1.com/" target="_blank">Sitio Oficial de la Fórmula 1</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=TmJFVfU1RuI" target="_blank">Video de Análisis en YouTube</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script>
+        function saveInfo() {
+            const userInput = document.getElementById('user-input').value;
+            document.getElementById('user-info').innerText = userInput;
+        }
+
+        function clearInfo() {
+            document.getElementById('user-info').innerText = '';
+            document.getElementById('user-input').value = '';
+        }
+    </script>
+</body>
+</html>

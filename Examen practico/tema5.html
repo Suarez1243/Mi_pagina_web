@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas de la Fórmula 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            padding: 20px;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+        .btn-custom {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .btn-custom:hover {
+            background-color: #c82333;
+            color: white;
+        }
+        .content-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .static-data {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #additional-info {
+            margin-top: 20px;
+        }
+        .highlight {
+            border-left: 5px solid #dc3545;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .highlight ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estadísticas de la Fórmula 1</h1>
+        <div id="clock"></div>
+        <nav>
+            <a class="btn btn-custom" href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <main id="main-content" class="container">
+        <div class="static-data">
+            <p>Campeonatos, Victorias, Poles, Vueltas Rápidas</p>
+        </div>
+        <section class="info-section">
+            <h2>Introducción</h2>
+            <div class="content-section">
+                <p>Las estadísticas en la Fórmula 1 son una forma fascinante de entender la historia y el rendimiento de los equipos y pilotos. Desde el número de campeonatos ganados hasta las vueltas rápidas y las pole positions, estos datos proporcionan una visión detallada del deporte.</p>
+                <p>En esta sección, exploraremos algunas de las estadísticas más impresionantes y reveladoras en la historia de la Fórmula 1.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Campeonatos</h2>
+            <div class="content-section">
+                <p>El campeonato de pilotos es el premio máximo en la Fórmula 1. Algunos pilotos han logrado múltiples títulos, estableciéndose como leyendas del deporte.</p>
+                <div class="highlight">
+                    <h4>Pilotos con Más Campeonatos</h4>
+                    <ul>
+                        <li>Michael Schumacher: 7 títulos (1994, 1995, 2000, 2001, 2002, 2003, 2004)</li>
+                        <li>Lewis Hamilton: 7 títulos (2008, 2014, 2015, 2017, 2018, 2019, 2020)</li>
+                        <li>Juan Manuel Fangio: 5 títulos (1951, 1954, 1955, 1956, 1957)</li>
+                        <li>Sebastian Vettel: 4 títulos (2010, 2011, 2012, 2013)</li>
+                        <li>Alain Prost: 4 títulos (1985, 1986, 1989, 1993)</li>
+                    </ul>
+                </div>
+                <p>Los campeonatos se determinan acumulando puntos a lo largo de la temporada, con puntos otorgados por las posiciones de llegada en cada carrera.</p>
+                <p>El sistema de puntuación ha evolucionado a lo largo de los años, actualmente otorgando puntos a los diez primeros clasificados de cada carrera.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Victorias</h2>
+            <div class="content-section">
+                <p>Las victorias en Grandes Premios son un indicador clave del éxito de un piloto y un equipo. Algunos pilotos han dominado durante años, acumulando impresionantes récords de victorias.</p>
+                <div class="highlight">
+                    <h4>Pilotos con Más Victorias</h4>
+                    <ul>
+                        <li>Lewis Hamilton: 103+ victorias</li>
+                        <li>Michael Schumacher: 91 victorias</li>
+                        <li>Sebastian Vettel: 53 victorias</li>
+                        <li>Alain Prost: 51 victorias</li>
+                        <li>Ayrton Senna: 41 victorias</li>
+                    </ul>
+                </div>
+                <p>La habilidad para ganar carreras en diferentes condiciones y circuitos es una prueba del talento y la versatilidad de estos pilotos. Las estrategias de carrera, la adaptabilidad a diferentes condiciones climáticas y la capacidad de trabajar con el equipo son factores cruciales para lograr victorias.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Poles Positions</h2>
+            <div class="content-section">
+                <p>Las poles positions son cruciales para el éxito en la Fórmula 1, ya que salir desde la primera posición en la parrilla puede ofrecer una ventaja significativa.</p>
+                <div class="highlight">
+                    <h4>Pilotos con Más Poles Positions</h4>
+                    <ul>
+                        <li>Lewis Hamilton: 103+ poles</li>
+                        <li>Michael Schumacher: 68 poles</li>
+                        <li>Ayrton Senna: 65 poles</li>
+                        <li>Sebastian Vettel: 57 poles</li>
+                        <li>Alain Prost: 33 poles</li>
+                    </ul>
+                </div>
+                <p>La capacidad de obtener la pole position refleja no solo la velocidad pura del piloto, sino también la capacidad del equipo para preparar el coche de manera óptima para una vuelta rápida.</p>
+                <p>La clasificación en la Fórmula 1 se lleva a cabo en una sesión de tres partes (Q1, Q2 y Q3), con los pilotos más rápidos avanzando a cada ronda sucesiva hasta que se determina la parrilla de salida.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Vueltas Rápidas</h2>
+            <div class="content-section">
+                <p>Las vueltas rápidas en carrera no solo son un indicador de la velocidad del coche, sino también de la capacidad del piloto para mantener un ritmo alto bajo presión.</p>
+                <div class="highlight">
+                    <h4>Pilotos con Más Vueltas Rápidas</h4>
+                    <ul>
+                        <li>Michael Schumacher: 77 vueltas rápidas</li>
+                        <li>Lewis Hamilton: 60+ vueltas rápidas</li>
+                        <li>Kimi Räikkönen: 46 vueltas rápidas</li>
+                        <li>Alain Prost: 41 vueltas rápidas</li>
+                        <li>Sebastian Vettel: 38 vueltas rápidas</li>
+                    </ul>
+                </div>
+                <p>Lograr la vuelta rápida en una carrera también puede otorgar puntos adicionales en algunas temporadas, añadiendo una dimensión estratégica al manejo del ritmo de carrera. Las vueltas rápidas requieren una combinación de neumáticos frescos, bajo combustible y condiciones óptimas en la pista.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Otros Récords Notables</h2>
+            <div class="content-section">
+                <p>Además de los campeonatos, victorias, poles y vueltas rápidas, hay otros récords notables en la Fórmula 1 que destacan el talento y la longevidad de ciertos pilotos.</p>
+                <div class="highlight">
+                    <h4>Récords Adicionales</h4>
+                    <ul>
+                        <li>Más Podios: Lewis Hamilton (176+)</li>
+                        <li>Más Grandes Premios Iniciados: Kimi Räikkönen (353)</li>
+                        <li>Piloto Más Joven en Ganar una Carrera: Max Verstappen (18 años, 228 días)</li>
+                        <li>Piloto Más Veterano en Ganar una Carrera: Luigi Fagioli (53 años, 22 días)</li>
+                        <li>Mayor Número de Temporadas: Rubens Barrichello (19 temporadas)</li>
+                    </ul>
+                </div>
+                <p>Estos récords adicionales muestran la diversidad de logros posibles en la Fórmula 1 y cómo diferentes pilotos han dejado su huella en la historia del deporte de diversas maneras.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Video de Estadísticas</h2>
+            <div class="content-section">
+                <div id="video-container" class="mt-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/14aXeUflcag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Escribe tu propia información</h2>
+            <div class="content-section">
+                <textarea class="form-control" rows="5" id="user-input" placeholder="Añade más información sobre estadísticas de la Fórmula 1 aquí..."></textarea>
+                <button class="btn btn-custom mt-3" onclick="saveInfo()">Guardar Información</button>
+                <button class="btn btn-custom mt-3" onclick="clearInfo()">Borrar Información</button>
+            </div>
+        </section>
+        <section id="additional-info" class="info-section">
+            <div class="content-section">
+                <h3>Información Adicional</h3>
+                <p id="user-info"></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function saveInfo() {
+            const userInput = document.getElementById('user-input').value;
+            document.getElementById('user-info').innerText = userInput;
+        }
+
+        function clearInfo() {
+            document.getElementById('user-info').innerText = '';
+            document.getElementById('user-input').value = '';
+        }
+    </script>
+</body>
+</html>
+

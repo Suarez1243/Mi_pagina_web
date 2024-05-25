@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos y Pilotos de la Fórmula 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        #main-content {
+            padding: 20px;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+        .btn-custom {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .btn-custom:hover {
+            background-color: #c82333;
+            color: white;
+        }
+        .content-section {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .static-data {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #additional-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Equipos y Pilotos de la Fórmula 1</h1>
+        <div id="clock"></div>
+        <nav>
+            <a class="btn btn-custom" href="index.html">Inicio</a>
+        </nav>
+    </header>
+    <main id="main-content" class="container">
+        <div class="static-data">
+            <p>Equipos Legendarios: Ferrari, McLaren, Mercedes, Red Bull | Pilotos Destacados: Ayrton Senna, Michael Schumacher, Lewis Hamilton</p>
+        </div>
+        <section class="info-section">
+            <h2>Introducción</h2>
+            <div class="content-section">
+                <p>La Fórmula 1 es tanto un deporte de equipos como de individuos. A lo largo de los años, varios equipos icónicos y pilotos talentosos han dejado su marca en la historia de la F1, contribuyendo al legado y la emoción del deporte.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Equipos Legendarios</h2>
+            <div class="content-section">
+                <p>Equipos como Ferrari, McLaren, Mercedes y Red Bull han dominado diferentes épocas de la Fórmula 1. Ferrari, el equipo más antiguo y exitoso, ha sido una constante en la parrilla desde el inicio del campeonato. McLaren y Williams fueron fuerzas dominantes en los años 80 y 90, mientras que Mercedes ha establecido su hegemonía en la era híbrida actual.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Pilotos Destacados</h2>
+            <div class="content-section">
+                <p>La Fórmula 1 ha producido algunos de los mejores pilotos de la historia del automovilismo. Nombres como Ayrton Senna, Alain Prost, Michael Schumacher y Lewis Hamilton son sinónimos de habilidad y éxito. Estos pilotos no solo ganaron múltiples campeonatos mundiales, sino que también dejaron un impacto duradero en el deporte con sus impresionantes actuaciones y rivalidades épicas.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Era Moderna</h2>
+            <div class="content-section">
+                <p>En la era moderna, los equipos de Fórmula 1 operan con presupuestos multimillonarios y utilizan tecnología avanzada para obtener cada ventaja posible. Los pilotos también se han convertido en atletas completos, dedicados a mantener un estado físico y mental óptimo para soportar las exigencias del deporte. La colaboración entre ingenieros, estrategas y pilotos es fundamental para el éxito en la pista.</p>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Video de Entrevista</h2>
+            <div class="content-section">
+                <div id="video-container" class="mt-3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bYxWYBEu9xY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="info-section">
+            <h2>Escribe tu propia información</h2>
+            <div class="content-section">
+                <textarea class="form-control" rows="5" id="user-input" placeholder="Añade más información sobre equipos y pilotos de la Fórmula 1 aquí..."></textarea>
+                <button class="btn btn-custom mt-3" onclick="saveInfo()">Guardar Información</button>
+                <button class="btn btn-custom mt-3" onclick="clearInfo()">Borrar Información</button>
+            </div>
+        </section>
+        <section id="additional-info" class="info-section">
+            <div class="content-section">
+                <h3>Información Adicional</h3>
+                <p id="user-info"></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function saveInfo() {
+            const userInput = document.getElementById('user-input').value;
+            document.getElementById('user-info').innerText = userInput;
+        }
+
+        function clearInfo() {
+            document.getElementById('user-info').innerText = '';
+            document.getElementById('user-input').value = '';
+        }
+    </script>
+</body>
+</html>
+
+
+
